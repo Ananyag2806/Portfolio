@@ -71,7 +71,7 @@ const useStyles = makeStyles((theme) => ({
 function AboutMe() {
 	const classes = useStyles();
 	return (
-		<div className={classes.root}>
+		<div id='about' className={classes.root}>
 			<Container>
 				<Typography className={classes.heading3}>About Me</Typography>
 				<Grid container spacing={3}>
@@ -89,9 +89,7 @@ function AboutMe() {
 							free time. My favourite videogame is Far Cry 3 and
 							GTA. My favourite book is Outliers by Malcom
 							Gladwell. I also like playing Chess and currently I
-							am working on a cool project about chess. To know
-							more about this project follow me on twitter as I
-							build it in public.
+							am working on a cool project about chess.
 						</Typography>
 					</Grid>
 					<Grid item xs={12} md={6}>

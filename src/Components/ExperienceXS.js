@@ -129,9 +129,10 @@ export default function CenteredTabs() {
 					August 2020 - present
 				</Typography>
 				<Typography className={classes.paragraph}>
-					Frontend Developer Entrepreneurship Platform Frontend
-					Developer Entrepreneurship Platform Frontend Developer
-					Entrepreneurship Platform
+					• Worked with a team of 10 developers and created various
+					iterations of Information Architecture, Wireframe and Data
+					Model. <br></br>• Contributed in development of the frontend
+					platform using React, MaterialUI, JavaScript and HTML/CSS.
 				</Typography>
 			</TabPanel>
 
@@ -143,10 +144,8 @@ export default function CenteredTabs() {
 					March 2021 - June 2021
 				</Typography>
 				<Typography className={classes.paragraph}>
-					Oversaw the group of interns working on the Disaster
-					Management Platform, using the experience and insights
-					gained by working on the Entrepreneurship Development
-					Platform.
+					• Oversaw the complete development of Disaster Management
+					Platform and lead the development team.
 				</Typography>
 			</TabPanel>
 		</Paper>

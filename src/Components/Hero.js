@@ -96,15 +96,15 @@ function Hero() {
 		<div className={classes.root}>
 			<Container>
 				<Typography variant='h1' className={classes.heading1}>
-					Ananya Gupta.
+					Hi! I am Ananya.
 				</Typography>
 				<Typography className={classes.heading2}>
-					I like to build things.
+					I make beautiful stuff.
 				</Typography>
 				<Typography className={classes.paragraph}>
 					I am a final year Computer Engineering student. I like to
 					design and make beautiful frontend applications. I am an
-					upcoming dev at Citi in Pune.
+					upcoming dev at Citi in Pune (probably).
 				</Typography>
 				<Button
 					href='mailto:ananyag2806@gmail.com'

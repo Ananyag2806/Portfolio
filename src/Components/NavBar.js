@@ -117,14 +117,32 @@ export default function NavBar() {
 			onKeyDown={toggleDrawer(anchor, false)}>
 			<Typography variant='h6' className={classes.title}>
 				<ul className={classes.ulDrawer}>
-					<li className={classes.liDrawer}>About</li>
-					<li className={classes.liDrawer}>Blog</li>
+					<li className={classes.liDrawer}>
+						<a href='#about' className={classes.li}>
+							About
+						</a>
+					</li>
+					<li className={classes.liDrawer}>
+						<a href='#' className={classes.li}>
+							Blog
+						</a>
+					</li>
 					{/* <li className={classes.liDrawer}>Experience</li>
           <li className={classes.liDrawer}>Projects</li>
           <li className={classes.liDrawer}>Skills</li> */}
-					<li className={classes.liDrawer}>Contact</li>
 					<li className={classes.liDrawer}>
-						<Button className={classes.resume}>Resume</Button>
+						<a href='#contact' className={classes.li}>
+							Contact
+						</a>
+					</li>
+					<li className={classes.liDrawer}>
+						<Button className={classes.resume}>
+							<a
+								href='https://drive.google.com/file/d/1kvdyHsuP_NUiJFz1NL0MMP6G1u2ZRYkg/view?usp=sharing'
+								target='_blank'>
+								Resume
+							</a>
+						</Button>
 					</li>
 				</ul>
 			</Typography>
@@ -137,8 +155,16 @@ export default function NavBar() {
 				<Toolbar className={classes.desktop}>
 					<Typography variant='h6' className={classes.title}>
 						<ul className={classes.ul}>
-							<li className={classes.li}>About</li>
-							<li className={classes.li}>Blog</li>
+							<li className={classes.li}>
+								<a href='#about' className={classes.li}>
+									About
+								</a>
+							</li>
+							<li className={classes.li}>
+								<a href='#blog' className={classes.li}>
+									Blog
+								</a>
+							</li>
 							{/* <li className={classes.li}>Experience</li>
 							<li className={classes.li}>Projects</li>
 							<li className={classes.li}>Skills</li> */}
@@ -149,7 +175,11 @@ export default function NavBar() {
 							</li>
 							<li className={classes.li}>
 								<Button className={classes.resume}>
-									Resume
+									<a
+										href='https://drive.google.com/file/d/1kvdyHsuP_NUiJFz1NL0MMP6G1u2ZRYkg/view?usp=sharing'
+										target='_blank'>
+										Resume
+									</a>
 								</Button>
 							</li>
 						</ul>
@@ -157,7 +187,7 @@ export default function NavBar() {
 				</Toolbar>
 			</AppBar>
 			<div>
-				<div className={classes.root} className={classes.mobile}>
+				<div className={classes.mobile}>
 					<AppBar className={classes.appBar} position='static'>
 						<Toolbar>
 							<div>
