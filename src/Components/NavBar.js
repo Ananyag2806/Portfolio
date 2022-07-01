@@ -138,7 +138,7 @@ export default function NavBar() {
 					<li className={classes.liDrawer}>
 						<Button className={classes.resume}>
 							<a
-								href='https://drive.google.com/file/d/1kvdyHsuP_NUiJFz1NL0MMP6G1u2ZRYkg/view?usp=sharing'
+								href='https://drive.google.com/file/d/1oaAFziFFa5pQY2ng2kz8cQcHF0aIJkZW/view'
 								target='_blank'>
 								Resume
 							</a>

@@ -59,7 +59,8 @@ const useStyles = makeStyles((theme) => ({
 	tabs: {
 		borderRight: `1px solid ${theme.palette.divider}`,
 		color: '#CCD6F6',
-		width: 250,
+		minWidth: '250px',
+		alignItems: 'center',
 	},
 
 	heading3: {
@@ -167,7 +168,7 @@ export default function VerticalTabs() {
 	return (
 		<div className={classes.root}>
 			<Typography className={classes.heading3}>
-				Work Experience
+				Work Experience & Projects
 			</Typography>
 
 			<div className={classes.content}>
@@ -177,16 +178,20 @@ export default function VerticalTabs() {
 					value={value}
 					onChange={handleChange}
 					aria-label='Vertical tabs example'
+					TabIndicatorProps={{
+						style: { background: '#50CCB5' },
+					}}
 					className={classes.tabs}>
 					<Tab label='EvolvingX' {...a11yProps(0)} />
 					<Tab label='EvolvingX' {...a11yProps(1)} />
+					<Tab label='Checkmate' {...a11yProps(2)} />
 				</Tabs>
 				<TabPanel value={value} index={0}>
 					<Typography className={classes.paragraphHighlight}>
 						Frontend Developer - Entrepreneurship Platform
 					</Typography>
 					<Typography className={classes.paragraphFade}>
-						August 2020 - June 2021
+						August 2020 - June 2022
 					</Typography>
 					<Typography className={classes.paragraph}>
 						• Worked with a team of 10 developers and created
@@ -202,11 +207,42 @@ export default function VerticalTabs() {
 						Team Lead - Disaster Management Platform
 					</Typography>
 					<Typography className={classes.paragraphFade}>
-						March 2021 - June 2021
+						March 2021 - June 2022
 					</Typography>
 					<Typography className={classes.paragraph}>
 						• Oversaw the complete development of Disaster
 						Management Platform and lead the development team.
+					</Typography>
+				</TabPanel>
+
+				<TabPanel value={value} index={2}>
+					<Typography className={classes.paragraphHighlight}>
+						Checkmate! - A place to see, share and show off your
+						chess games
+					</Typography>
+					<Typography className={classes.paragraphFade}>
+						<a
+							href='https://github.com/Ananyag2806/checkmate'
+							target='_blank'>
+							Live Link
+						</a>
+						{'  '}|{'  '}
+						<a
+							href='https://github.com/Ananyag2806/checkmate'
+							target='_blank'>
+							Github Link{' '}
+						</a>
+					</Typography>
+					<Typography className={classes.paragraph}>
+						• Created <b>express + node</b> server.
+						<br />• Created <b>restful API routes</b> to create and
+						delete user and post, upvote, downvote, login and
+						register a user.
+						<br />• Used <b>MongoDB</b> to store user and post data
+						and used <b>Mongoose</b> to create schema for user and
+						post.
+						<br />• Used <b>React and MUI</b> to create a user
+						interface and <b>axios</b> to make API calls.
 					</Typography>
 				</TabPanel>
 			</div>

@@ -56,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
 	tabs: {
 		borderRight: `1px solid ${theme.palette.divider}`,
 		color: '#CCD6F6',
-		width: 250,
+		minWidth: '250px',
 	},
 
 	heading3: {
@@ -108,17 +108,19 @@ export default function CenteredTabs() {
 	return (
 		<Paper className={classes.root}>
 			<Typography variant='heading' className={classes.heading3}>
-				Work Experience
+				Work Experience & Projects
 			</Typography>
 			<Tabs
 				value={value}
 				onChange={handleChange}
-				// indicatorColor="primary"
-				// textColor="primary"
 				centered
+				TabIndicatorProps={{
+					style: { background: '#50CCB5' },
+				}}
 				className={classes.tabs}>
 				<Tab label='EvolvingX' {...a11yProps(0)} />
 				<Tab label='EvolvingX' {...a11yProps(1)} />
+				<Tab label='Checkmate' {...a11yProps(2)} />
 			</Tabs>
 
 			<TabPanel value={value} index={0}>
@@ -146,6 +148,36 @@ export default function CenteredTabs() {
 				<Typography className={classes.paragraph}>
 					• Oversaw the complete development of Disaster Management
 					Platform and lead the development team.
+				</Typography>
+			</TabPanel>
+
+			<TabPanel value={value} index={2}>
+				<Typography className={classes.paragraphHighlight}>
+					Checkmate! - A place to see, share and show off your chess
+					games
+				</Typography>
+				<Typography className={classes.paragraphFade}>
+					<a
+						href='https://github.com/Ananyag2806/checkmate'
+						target='_blank'>
+						Live Link
+					</a>
+					{'  '}|{'  '}
+					<a
+						href='https://github.com/Ananyag2806/checkmate'
+						target='_blank'>
+						Github Link{' '}
+					</a>
+				</Typography>
+				<Typography className={classes.paragraph}>
+					• Created <b>express + node</b> server.
+					<br />• Created <b>restful API routes</b> to create and
+					delete user and post, upvote, downvote, login and register a
+					user.
+					<br />• Used <b>MongoDB</b> to store user and post data and
+					used <b>Mongoose</b> to create schema for user and post.
+					<br />• Used <b>React and MUI</b> to create a user interface
+					and <b>axios</b> to make API calls.
 				</Typography>
 			</TabPanel>
 		</Paper>

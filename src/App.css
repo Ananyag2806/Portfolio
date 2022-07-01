@@ -21,6 +21,14 @@ a:active {
 	color: #50ccb5;
 }
 
+::-moz-selection {
+	background: #233554;
+}
+
+::selection {
+	background: #233554;
+}
+
 .App-logo {
 	height: 40vmin;
 	pointer-events: none;
