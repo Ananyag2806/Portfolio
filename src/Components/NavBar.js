@@ -127,9 +127,17 @@ export default function NavBar() {
 							Blog
 						</a>
 					</li>
-					{/* <li className={classes.liDrawer}>Experience</li>
-          <li className={classes.liDrawer}>Projects</li>
-          <li className={classes.liDrawer}>Skills</li> */}
+
+					<li className={classes.liDrawer}>
+						<a href='#projects' className={classes.li}>
+							Work & Projects
+						</a>
+					</li>
+					{/* <li className={classes.liDrawer}>
+						<a href='#skills' className={classes.li}>
+							Skills
+						</a>
+					</li> */}
 					<li className={classes.liDrawer}>
 						<a href='#contact' className={classes.li}>
 							Contact
@@ -165,9 +173,16 @@ export default function NavBar() {
 									Blog
 								</a>
 							</li>
-							{/* <li className={classes.li}>Experience</li>
-							<li className={classes.li}>Projects</li>
-							<li className={classes.li}>Skills</li> */}
+							<li className={classes.li}>
+								<a href='#projects' className={classes.li}>
+									Work & Projects
+								</a>
+							</li>
+							{/* <li className={classes.li}>
+								<a href='#skills' className={classes.li}>
+									Skills
+								</a>
+							</li> */}
 							<li className={classes.li}>
 								<a href='#contact' className={classes.li}>
 									Contact

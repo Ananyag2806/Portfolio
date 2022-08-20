@@ -106,7 +106,7 @@ export default function CenteredTabs() {
 	};
 
 	return (
-		<Paper className={classes.root}>
+		<Paper id='projects' className={classes.root}>
 			<Typography variant='heading' className={classes.heading3}>
 				Work Experience & Projects
 			</Typography>
@@ -118,40 +118,25 @@ export default function CenteredTabs() {
 					style: { background: '#50CCB5' },
 				}}
 				className={classes.tabs}>
-				<Tab label='EvolvingX' {...a11yProps(0)} />
-				<Tab label='EvolvingX' {...a11yProps(1)} />
-				<Tab label='Checkmate' {...a11yProps(2)} />
+				<Tab label='Citi Corp' {...a11yProps(0)} />
+				<Tab label='Checkmate' {...a11yProps(1)} />
+				<Tab label='EvolvingX' {...a11yProps(2)} />
+				<Tab label='EvolvingX' {...a11yProps(3)} />
 			</Tabs>
 
 			<TabPanel value={value} index={0}>
 				<Typography className={classes.paragraphHighlight}>
-					Frontend Developer - Entrepreneurship Platform
+					Citi Corp Services Pvt. Ltd. - Data Analyst
 				</Typography>
 				<Typography className={classes.paragraphFade}>
-					August 2020 - present
+					July 2022 - present
 				</Typography>
 				<Typography className={classes.paragraph}>
-					• Worked with a team of 10 developers and created various
-					iterations of Information Architecture, Wireframe and Data
-					Model. <br></br>• Contributed in development of the frontend
-					platform using React, MaterialUI, JavaScript and HTML/CSS.
+					Dont know what to write here.
+					<br /> Coming soon.
 				</Typography>
 			</TabPanel>
-
 			<TabPanel value={value} index={1}>
-				<Typography className={classes.paragraphHighlight}>
-					Team Lead - Disaster Management Platform
-				</Typography>
-				<Typography className={classes.paragraphFade}>
-					March 2021 - June 2021
-				</Typography>
-				<Typography className={classes.paragraph}>
-					• Oversaw the complete development of Disaster Management
-					Platform and lead the development team.
-				</Typography>
-			</TabPanel>
-
-			<TabPanel value={value} index={2}>
 				<Typography className={classes.paragraphHighlight}>
 					Checkmate! - A place to see, share and show off your chess
 					games
@@ -178,6 +163,33 @@ export default function CenteredTabs() {
 					used <b>Mongoose</b> to create schema for user and post.
 					<br />• Used <b>React and MUI</b> to create a user interface
 					and <b>axios</b> to make API calls.
+				</Typography>
+			</TabPanel>
+			<TabPanel value={value} index={2}>
+				<Typography className={classes.paragraphHighlight}>
+					Frontend Developer - Entrepreneurship Platform
+				</Typography>
+				<Typography className={classes.paragraphFade}>
+					August 2020 - present
+				</Typography>
+				<Typography className={classes.paragraph}>
+					• Worked with a team of 10 developers and created various
+					iterations of Information Architecture, Wireframe and Data
+					Model. <br></br>• Contributed in development of the frontend
+					platform using React, MaterialUI, JavaScript and HTML/CSS.
+				</Typography>
+			</TabPanel>
+
+			<TabPanel value={value} index={3}>
+				<Typography className={classes.paragraphHighlight}>
+					Team Lead - Disaster Management Platform
+				</Typography>
+				<Typography className={classes.paragraphFade}>
+					March 2021 - June 2021
+				</Typography>
+				<Typography className={classes.paragraph}>
+					• Oversaw the complete development of Disaster Management
+					Platform and lead the development team.
 				</Typography>
 			</TabPanel>
 		</Paper>

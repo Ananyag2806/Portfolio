@@ -1,11 +1,11 @@
 import './App.css';
-import AboutMe from './Components/AboutMe';
-import Hero from './Components/Hero';
 import NavBar from './Components/NavBar';
-import SideLines from './Components/SideLines';
-import Experience from './Components/Experience';
-import ExperienceXS from './Components/ExperienceXS';
-import Contact from './Components/Contact';
+import Blogs from './Components/Blogs';
+import Landing from './Components/Landing';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Fragment } from 'react';
+import Blog1 from './Components/Blog1';
+import Blog2 from './Components/Blog2';
 
 // green color: #50CCB5
 // background color: #0A192F
@@ -23,14 +23,18 @@ import Contact from './Components/Contact';
 function App() {
 	return (
 		<div className='App'>
-			<NavBar />
-			<Hero />
-			<SideLines />
+			<Router>
+				<Fragment>
+					<NavBar />
 
-			<AboutMe />
-			<Experience />
-			<ExperienceXS />
-			<Contact />
+					<Routes>
+						<Route path='/' element={<Landing />} />
+						<Route exact path='/blogs' element={<Blogs />} />
+						<Route exact path='/blog1' element={<Blog1 />} />
+						<Route exact path='/blog2' element={<Blog2 />} />
+					</Routes>
+				</Fragment>
+			</Router>
 		</div>
 	);
 }
