@@ -54,6 +54,7 @@ const useStyles = makeStyles((theme) => ({
 		lineHeight: 1.7,
 		paddingLeft: 150,
 		fontSize: 20,
+		fontFamily: 'Consolas',
 		[theme.breakpoints.down('md')]: {
 			paddingLeft: 175,
 		},
@@ -102,9 +103,9 @@ function Hero() {
 					I make beautiful stuff.
 				</Typography>
 				<Typography className={classes.paragraph}>
-					I am a final year Computer Engineering student. I like to
-					design and make beautiful frontend applications. I am an
-					upcoming dev at Citi in Pune (probably).
+					I am a design minded individual with a passion for creating
+					beautiful and intuitive user experiences. I am currently
+					working at Citi as a technology analyst.
 				</Typography>
 				<Button
 					href='mailto:ananyag2806@gmail.com'

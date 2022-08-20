@@ -26,7 +26,6 @@ function App() {
 			<Router>
 				<Fragment>
 					<NavBar />
-
 					<Routes>
 						<Route path='/' element={<Landing />} />
 						<Route exact path='/blogs' element={<Blogs />} />

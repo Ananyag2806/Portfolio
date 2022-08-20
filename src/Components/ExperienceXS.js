@@ -74,6 +74,7 @@ const useStyles = makeStyles((theme) => ({
 		paddingLeft: 0,
 		fontSize: 20,
 		textAlign: 'left',
+		fontFamily: 'Consolas',
 	},
 	paragraphFade: {
 		color: '#8892B0',
@@ -82,6 +83,7 @@ const useStyles = makeStyles((theme) => ({
 		paddingLeft: 0,
 		fontSize: 20,
 		textAlign: 'left',
+		fontFamily: 'Consolas',
 	},
 	paragraphHighlight: {
 		color: '#50CCB5',
@@ -90,6 +92,7 @@ const useStyles = makeStyles((theme) => ({
 		fontSize: 20,
 		fontWeight: 500,
 		textAlign: 'left',
+		fontFamily: 'Consolas',
 	},
 	tabContent: {
 		padding: 0,

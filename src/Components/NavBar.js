@@ -6,6 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import clsx from 'clsx';
 import Drawer from '@material-ui/core/Drawer';
+import { Link } from 'react-router-dom';
 // import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
 
 const useStyles = makeStyles((theme) => ({
@@ -118,30 +119,24 @@ export default function NavBar() {
 			<Typography variant='h6' className={classes.title}>
 				<ul className={classes.ulDrawer}>
 					<li className={classes.liDrawer}>
-						<a href='#about' className={classes.li}>
+						<Link href='#about' to='/' className={classes.li}>
 							About
-						</a>
+						</Link>
 					</li>
 					<li className={classes.liDrawer}>
-						<a href='#' className={classes.li}>
-							Blog
-						</a>
+						<Link href='#about' to='/blogs' className={classes.li}>
+							Blogs
+						</Link>
 					</li>
-
 					<li className={classes.liDrawer}>
-						<a href='#projects' className={classes.li}>
+						<Link href='#about' to='/' className={classes.li}>
 							Work & Projects
-						</a>
+						</Link>
 					</li>
-					{/* <li className={classes.liDrawer}>
-						<a href='#skills' className={classes.li}>
-							Skills
-						</a>
-					</li> */}
 					<li className={classes.liDrawer}>
-						<a href='#contact' className={classes.li}>
+						<Link href='#about' to='/' className={classes.li}>
 							Contact
-						</a>
+						</Link>
 					</li>
 					<li className={classes.liDrawer}>
 						<Button className={classes.resume}>
@@ -163,35 +158,23 @@ export default function NavBar() {
 				<Toolbar className={classes.desktop}>
 					<Typography variant='h6' className={classes.title}>
 						<ul className={classes.ul}>
-							<li className={classes.li}>
-								<a href='#about' className={classes.li}>
-									About
-								</a>
-							</li>
-							<li className={classes.li}>
-								<a href='#blog' className={classes.li}>
-									Blog
-								</a>
-							</li>
-							<li className={classes.li}>
-								<a href='#projects' className={classes.li}>
-									Work & Projects
-								</a>
-							</li>
-							{/* <li className={classes.li}>
-								<a href='#skills' className={classes.li}>
-									Skills
-								</a>
-							</li> */}
-							<li className={classes.li}>
-								<a href='#contact' className={classes.li}>
-									Contact
-								</a>
-							</li>
+							<Link href='#about' to='/' className={classes.li}>
+								About
+							</Link>
+							<Link to='/blogs' className={classes.li}>
+								Blogs
+							</Link>
+							<Link to='/' className={classes.li}>
+								Work & Projects
+							</Link>
+							<Link to='/' className={classes.li}>
+								Contact
+							</Link>
+
 							<li className={classes.li}>
 								<Button className={classes.resume}>
 									<a
-										href='https://drive.google.com/file/d/1kvdyHsuP_NUiJFz1NL0MMP6G1u2ZRYkg/view?usp=sharing'
+										href='https://drive.google.com/file/d/1oaAFziFFa5pQY2ng2kz8cQcHF0aIJkZW/view'
 										target='_blank'>
 										Resume
 									</a>

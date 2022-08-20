@@ -53,6 +53,7 @@ const useStyles = makeStyles((theme) => ({
 		display: 'flex',
 		paddingLeft: 175,
 		paddingRight: 150,
+		fontFamily: 'Consolas',
 		[theme.breakpoints.down('sm')]: {
 			paddingLeft: 125,
 			paddingRight: 150,
@@ -63,6 +64,7 @@ const useStyles = makeStyles((theme) => ({
 		color: '#CCD6F6',
 		minWidth: '250px',
 		alignItems: 'center',
+		fontFamily: 'Consolas',
 	},
 
 	heading3: {
@@ -94,6 +96,7 @@ const useStyles = makeStyles((theme) => ({
 		paddingLeft: 0,
 		fontSize: 20,
 		textAlign: 'left',
+		fontFamily: 'Consolas',
 		// [theme.breakpoints.down('md')]: {
 		//     marginLeft: 0,
 		//     marginRight: 0,
@@ -116,6 +119,7 @@ const useStyles = makeStyles((theme) => ({
 		paddingLeft: 0,
 		fontSize: 20,
 		textAlign: 'left',
+		fontFamily: 'Consolas',
 		// [theme.breakpoints.down('md')]: {
 		//     marginLeft: 0,
 		//     marginRight: 0,
@@ -138,6 +142,7 @@ const useStyles = makeStyles((theme) => ({
 		fontSize: 20,
 		fontWeight: 500,
 		textAlign: 'left',
+		fontFamily: 'Consolas',
 		// [theme.breakpoints.down('md')]: {
 		//     marginLeft: 0,
 		//     marginRight: 0,

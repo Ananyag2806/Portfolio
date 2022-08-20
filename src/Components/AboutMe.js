@@ -40,6 +40,7 @@ const useStyles = makeStyles((theme) => ({
 		lineHeight: 1.7,
 		paddingLeft: 150,
 		fontSize: 20,
+		fontFamily: 'Consolas',
 		[theme.breakpoints.down('md')]: {
 			paddingLeft: 175,
 			marginRight: 10,
