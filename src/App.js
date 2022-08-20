@@ -27,10 +27,22 @@ function App() {
 				<Fragment>
 					<NavBar />
 					<Routes>
-						<Route path='/' element={<Landing />} />
-						<Route exact path='/blogs' element={<Blogs />} />
-						<Route exact path='/blog1' element={<Blog1 />} />
-						<Route exact path='/blog2' element={<Blog2 />} />
+						<Route path='/portfolio' element={<Landing />} />
+						<Route
+							exact
+							path='/portfolio/blogs'
+							element={<Blogs />}
+						/>
+						<Route
+							exact
+							path='/portfolio/blog1'
+							element={<Blog1 />}
+						/>
+						<Route
+							exact
+							path='/portfolio/blog2'
+							element={<Blog2 />}
+						/>
 					</Routes>
 				</Fragment>
 			</Router>

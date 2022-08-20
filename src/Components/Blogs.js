@@ -49,11 +49,17 @@ function Blogs(props) {
 			</Typography>
 			<br />
 			<br />
-			<Typography to='/blog1' component={Link} className={classes.list}>
+			<Typography
+				to='/portfolio/blog1'
+				component={Link}
+				className={classes.list}>
 				The first and last interview of my placement season
 			</Typography>
 			<br />
-			<Typography to='/blog2' component={Link} className={classes.list}>
+			<Typography
+				to='/portfolio/blog2'
+				component={Link}
+				className={classes.list}>
 				What I want from my life
 			</Typography>
 		</div>

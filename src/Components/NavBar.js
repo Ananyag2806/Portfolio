@@ -119,22 +119,22 @@ export default function NavBar() {
 			<Typography variant='h6' className={classes.title}>
 				<ul className={classes.ulDrawer}>
 					<li className={classes.liDrawer}>
-						<Link href='#about' to='/' className={classes.li}>
+						<Link to='/portfolio' className={classes.li}>
 							About
 						</Link>
 					</li>
 					<li className={classes.liDrawer}>
-						<Link href='#about' to='/blogs' className={classes.li}>
+						<Link to='/portfolio/blogs' className={classes.li}>
 							Blogs
 						</Link>
 					</li>
 					<li className={classes.liDrawer}>
-						<Link href='#about' to='/' className={classes.li}>
+						<Link to='/portfolio' className={classes.li}>
 							Work & Projects
 						</Link>
 					</li>
 					<li className={classes.liDrawer}>
-						<Link href='#about' to='/' className={classes.li}>
+						<Link to='/portfolio' className={classes.li}>
 							Contact
 						</Link>
 					</li>
@@ -158,16 +158,16 @@ export default function NavBar() {
 				<Toolbar className={classes.desktop}>
 					<Typography variant='h6' className={classes.title}>
 						<ul className={classes.ul}>
-							<Link href='#about' to='/' className={classes.li}>
+							<Link to='/portfolio' className={classes.li}>
 								About
 							</Link>
-							<Link to='/blogs' className={classes.li}>
+							<Link to='/portfolio/blogs' className={classes.li}>
 								Blogs
 							</Link>
-							<Link to='/' className={classes.li}>
+							<Link to='/portfolio' className={classes.li}>
 								Work & Projects
 							</Link>
-							<Link to='/' className={classes.li}>
+							<Link to='/portfolio' className={classes.li}>
 								Contact
 							</Link>
 
