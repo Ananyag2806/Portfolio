@@ -23,7 +23,7 @@ import Blog2 from './Components/Blog2';
 function App() {
 	return (
 		<div className='App'>
-			<Router basename='/portfolio'>
+			<Router>
 				<Fragment>
 					<NavBar />
 					<Routes>
